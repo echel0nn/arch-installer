@@ -23,7 +23,7 @@ PACKAGES="/tmp/.pkgs"			# Packages to install
 MOUNT_OPTS="/tmp/.mnt_opts" 	# Filesystem Mount options
 
 # Save retyping
-VERSION="Arch Linux Türkçe Kurulum Yardımcısı"
+VERSION="Arch Linux Installer"
 
 # Installation
 DM_INST=""							# Which DMs have been installed?
@@ -98,7 +98,7 @@ select_language() {
     
     dialog --backtitle "$VERSION - $SYSTEM ($ARCHI)" --title " Dil Seçin: " --menu "\nLanguage / sprache / taal / språk / lingua / idioma / nyelv / língua" 0 0 9 \
  	"1" $"English            (en_**)" \
-	"2" $"Türkçe             (tr_TR)" 2>${ANSWER}
+	"2" $"Turkce             (tr_TR)" 2>${ANSWER}
 
 	case $(cat ${ANSWER}) in
         "1") source ./english.trans
