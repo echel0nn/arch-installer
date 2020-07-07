@@ -98,7 +98,7 @@ select_language() {
     
     dialog --backtitle "$VERSION - $SYSTEM ($ARCHI)" --title " Dil Seçin: " --menu "\nLanguage / sprache / taal / språk / lingua / idioma / nyelv / língua" 0 0 9 \
  	"1" $"English            (en_**)" \
-	"9" $"Türkçe             (tr_TR)" 2>${ANSWER}
+	"2" $"Türkçe             (tr_TR)" 2>${ANSWER}
 
 	case $(cat ${ANSWER}) in
         "1") source ./english.trans
